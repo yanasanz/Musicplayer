@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="normal_padding">12dp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="big_padding">24dp</dimen>
+    <dimen name="small_button_size">36dp</dimen>
+    <dimen name="big_button_size">48dp</dimen>
+    <dimen name="huge_size">200dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+</resources>

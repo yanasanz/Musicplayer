@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/medium_padding">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playPauseButton"
+            style="@style/Widget.AppTheme.IconButton"
+            android:checkable="true"
+            app:icon="@drawable/ic_play_pause_selector"
+            app:iconSize="@dimen/small_button_size"
+            android:layout_width="@dimen/small_button_size"
+            android:layout_height="@dimen/small_button_size"
+            android:background="@drawable/button_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/playPauseButton"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="song" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="@dimen/huge_size"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/name"
+            android:progressTint="@color/yellow"
+            android:thumbTint="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/big_padding"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
